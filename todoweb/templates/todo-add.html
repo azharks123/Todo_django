@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block body_block%}
+<h2>Create TO-DO</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form action="" method="post">
+                    {%csrf_token%}
+                    {{form.as_p}}
+                    <button type="submit" class="btn btn-outline-info">Create</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+{%endblock%}
